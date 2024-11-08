@@ -1,6 +1,6 @@
 file_format: "1"
-id: Capsule3
-name: Capsule3
+id: capsule3
+name: capsule3
 type: shield
 url: https://github.com/miketronic/capsule3
 requires: [waveshare_rp2040_zero]
