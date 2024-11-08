@@ -1,9 +1,0 @@
-# Copyright (c) 2024 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-if SHIELD_capsule3
-
-config ZMK_KEYBOARD_NAME
-    default "capsule3"
-
-endif
