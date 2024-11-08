@@ -1,0 +1,8 @@
+file_format: "1"
+id: Capsule3
+name: Capsule3
+type: shield
+url: https://github.com/miketronic/capsule3
+requires: [waveshare_rp2040_zero]
+features:
+  - keys
