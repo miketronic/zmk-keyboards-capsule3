@@ -4,6 +4,6 @@
 if SHIELD_capsule3
 
 config ZMK_KEYBOARD_NAME
-    default "Capsule3"
+    default "capsule3"
 
 endif
