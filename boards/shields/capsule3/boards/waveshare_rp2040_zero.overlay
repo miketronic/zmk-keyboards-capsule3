@@ -1,24 +1,21 @@
 #include <dt-bindings/led/led.h>
 
-&pinctrl {  
-    spi0_default: spi0_default {
-        group1 {
-	    pinmux = <SPI0_CSN_P0>, <SPI0_SCK_P18>, <SPI0_TX_P19>;
-	};
-	group2 {
-	    pinmux = <SPI0_RX_P16>;
-	    input-enable;
+
+&spi0_default: spi0_default {
+    group1 {
+        psels = <SPI0_CSN_P0>, <SPI0_SCK_P18>, <SPI0_TX_P19>;
+    };
+    group2 {
+        psels = <SPI0_RX_P16>;
 	};
     };
-};
 
 &spi0 {
     compatible = "nordic,nrf-spim";
     status = "okay";
 
     pinctrl-0 = <&spi0_default>;
-    pinctrl-1 = <&spi0_sleep>;
-    pinctrl-names = "default", "sleep";
+    pinctrl-names = "default";
 
     led_strip: ws2812@0 {
         compatible = "worldsemi,ws2812-spi";
